@@ -12,7 +12,7 @@ jobs:
         with:
           ruby-version: 2.6.6
       - name: Cache Ruby Gems
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: /.tmp/vendor/bundle
           key: ${{ runner.os }}-gems-latest-${{ hashFiles('**/Gemfile.lock', '**.*.gemspec') }}
